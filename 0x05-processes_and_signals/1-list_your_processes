@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-#list all pids
-
-ps -auxf
+#print in user-oriented format
+ps auxf

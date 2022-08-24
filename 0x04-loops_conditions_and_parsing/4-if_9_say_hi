@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
-#prints a string 10 times
-x=1
-while [ $x -ne 11 ]
-do
-  if [ $x -eq 9 ]
-  then
-    echo "Hi"
-  else
-    echo "Best School"
-  fi
-  x=$(( x + 1 ))
+#print bestschool 10 times and hi in 9
+i=0
+while [ $i -lt 11 ]; do
+    if [ $i -eq 9 ]
+    then
+      	echo "Hi"
+    else
+	echo "Best School"
+    fi
+    let "i += 1"
 done

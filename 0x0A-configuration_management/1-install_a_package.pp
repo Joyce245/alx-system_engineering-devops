@@ -1,5 +1,5 @@
-# Install puppet-lint 2.1.1 version with Puppet
-package { 'puppet-lint':
-  ensure   => '2.1.1',
-  provider => 'gem',
+# Install puppet-lint package
+package { 'flask':
+  ensure   => '2.1.0',
+  provider => 'pip3',
 }

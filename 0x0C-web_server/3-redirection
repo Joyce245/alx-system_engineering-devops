@@ -7,4 +7,4 @@ apt-get -y install nginx
 sudo service nginx start
 echo "Best School" | sudo tee /usr/share/nginx/html/index.html
 sudo sed -i "30i $REDIR" $SRC
-sudo service nginx restart
+sudo service nginx start

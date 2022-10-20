@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# installs nginx
-apt-get -y update
-apt-get -y install nginx
+# installs nginx 
+sudo apt-get -y update
+sudo apt-get -y install nginx
 echo "Hello World!"  > /var/www/html/index.nginx-debian.html
 sed -i "/server_name _;/ a\\\trewrite ^/redirect_me http://www.google.com permanent;" /etc/nginx/sites-available/default
 sed -i "/redirect_me/ a\\\terror_page 404 /custom_404.html;" /etc/nginx/sites-available/default
